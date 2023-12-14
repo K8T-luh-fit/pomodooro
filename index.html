@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="spotify" type="button" onclick="location.href='https:open.spotify.com/playlist/2Patv2ukY8EXG8oZO5iWEx?si=9078560d0e6741b9&pt=c584b93140918df7ed8b67f41456315d'"><i class="fa-brands fa-spotify"></i></button>
+  <button id="notes"><i class="fa-regular fa-note-sticky"></i></i></button>
+
+  <dialog class="modal" id="modal">
+    <h2>notes</h2>
+    <textarea id="user-notes" placeholder="Write your notes here..."></textarea>
+    <button id="close-button">close</button>
+  </dialog>
+    
+  <div class="container">
+        <h1 class="title"> Pomodoro Timer</h1>
+        <div class="section-container">
+            <button id="pomodoro">Pomodoro</button>
+            <button id="short-break">Short Break</button>
+            <button id="long-break">Long Break</button>
+        </div>
+        <p class ="timer" id="timer"> 25:00</p>
+        <div class="tim-btn-container">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+
+
+        <!--music player-->
+        <div class="music-container" id="music-container">
+        <div class="music-info">
+            <h4 class="title" id="song-title"></h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+                <button id="prev">
+                  <i class="fas fa-backward"></i>
+                </button>
+                <button id="play">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button id="next">
+                  <i class="fas fa-forward"></i>
+            </div>
+        </div>
+
+        <audio src="music/Creme's Interlude.mp3" id="audio"></audio>
+
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

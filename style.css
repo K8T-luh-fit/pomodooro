@@ -1,0 +1,149 @@
+body{
+  background-color:#add8e6;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .title{
+    font-size: 36px;
+    margin: 40px;
+    color:#2c3e50;
+  }
+
+  #song-title{
+    font-size: 20px;
+    margin-top:20px;
+    margin:10px;
+  }
+
+  .timer{
+    font-size:50px;
+    color: #2c3e50;
+  }
+
+  button{
+    font-size:20px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    background-color:#2c3e50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: #353c43;
+  }
+
+  button:active{
+    background-color:#353c43;
+    box-shadow:0 5px #666;
+    transform: translateY(4px);
+  }
+
+  /*notes*/
+  #notes{
+    float:right;
+  }
+  #spotify{
+    float:right;
+  }
+
+  /*start*/
+  #start{
+    background-color:#27ae60;
+  }
+
+  #start:hover{
+    background-color: #3e8e41;
+  }
+
+  #start:active{
+    background-color:#3e8e41;
+    box-shadow:0 5px #666;
+    transform: translateY(4px);
+  }
+
+  /*stop*/
+  #stop{
+    background-color: #c0392b;
+  }
+
+  #stop:hover{
+    background-color:#9b483e;
+  }
+
+  #stop:active{
+    background-color:#9b483e;
+    box-shadow:0 5px #666;
+    transform: translateY(4px);
+  }
+
+  /*reset*/  
+  #reset{
+    background-color:#7f8c8d;
+  }
+
+  #reset:hover{
+    background-color:#5d6464; 
+  }
+
+  #reset:active{
+    background-color:#5d6464;
+    box-shadow:0 5px #666;
+    transform: translateY(4px);
+  }
+
+  /*music player*/
+
+  .music-info{
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  .music-container{
+    margin:30px;
+  }
+
+  .progress-container{
+    background:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto 20px;
+    height: 4px;
+    width: 100%;
+  }
+
+  .progress{
+    background-color:#5aa0b7;
+    border-radius: 5px;
+    height:100%;
+    width: 0%;
+    transition: width 0.1s linear;
+  }
+
+  #prev{
+    font-size:10px;
+    padding: 5px 10px;
+    margin: 20px;
+  }
+
+  #play{
+    font-size:10px;
+    padding: 5px 10px;
+    margin: 20px;
+  }
+
+  #next{
+    font-size:10px;
+    padding: 5px 10px;
+    margin: 20px;
+  }
